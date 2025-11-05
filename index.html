@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learnova- Learn. Share. Grow.</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="logo">Learnova</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#join">Join</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Learn. Share. Grow.</h1>
+      <p>Empowering students to connect, collaborate, and create change through shared knowledge.</p>
+      <a href="#resources" class="btn">Explore Resources</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <h2>About Learnova</h2>
+    <p>
+     Learnova is an open platform built by students, for students. Our mission is to make learning accessible,
+      interactive, and community-driven. Whether you’re studying technology, art, or business — here you’ll find
+      resources, mentorship, and inspiration.
+    </p>
+  </section>
+
+  <!-- ===== RESOURCES SECTION ===== -->
+  <section class="resources" id="resources">
+    <h2>Featured Resources</h2>
+    <div class="resource-container">
+      <div class="resource-box" onclick="showTutorials('coding')">
+        <h3>💻 Coding & Tech</h3>
+        <p>Explore tutorials and coding challenges to build your technical skills.</p>
+      </div>
+      <div class="resource-box" onclick="showTutorials('design')">
+        <h3>🎨 Design & Creativity</h3>
+        <p>Unleash your creativity with UI/UX, graphic design, and digital art resources.</p>
+      </div>
+      <div class="resource-box" onclick="showTutorials('communication')">
+        <h3>💬 Communication Skills</h3>
+        <p>Improve your public speaking, writing, and teamwork abilities.</p>
+      </div>
+      <div class="resource-box" onclick="showTutorials('career')">
+        <h3>📈 Career & Finance</h3>
+        <p>Learn how to manage money, build resumes, and prepare for interviews.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOIN SECTION ===== -->
+  <section class="join" id="join">
+    <h2>Join Our Community</h2>
+    <p>Become part of a growing network of learners and mentors working together for a better tomorrow.</p>
+    <a href="#" class="btn">Join Now</a>
+  </section>
+
+ <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Connect with us on social media or drop us an email!</p>
+
+    <!-- Contact Form -->
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+    <p id="responseMessage"></p>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Learnova | Made with ❤️ by Students for Society</p>
+  </footer>
+
+  <!-- ===== MODAL (For Tutorials) ===== -->
+  <div id="tutorialModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- ===== SCRIPT ===== -->
+  <script src="script.js"></script>
+</body>
+</html>
+
